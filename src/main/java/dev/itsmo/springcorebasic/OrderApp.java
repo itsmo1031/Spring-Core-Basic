@@ -3,10 +3,8 @@ package dev.itsmo.springcorebasic;
 import dev.itsmo.springcorebasic.member.Grade;
 import dev.itsmo.springcorebasic.member.Member;
 import dev.itsmo.springcorebasic.member.MemberService;
-import dev.itsmo.springcorebasic.member.MemberServiceImpl;
 import dev.itsmo.springcorebasic.order.Order;
 import dev.itsmo.springcorebasic.order.OrderService;
-import dev.itsmo.springcorebasic.order.OrderServiceImpl;
 
 public class OrderApp {
     public static void main(String[] args) {

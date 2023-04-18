@@ -4,7 +4,6 @@ import dev.itsmo.springcorebasic.AppConfig;
 import dev.itsmo.springcorebasic.member.Grade;
 import dev.itsmo.springcorebasic.member.Member;
 import dev.itsmo.springcorebasic.member.MemberService;
-import dev.itsmo.springcorebasic.member.MemberServiceImpl;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
