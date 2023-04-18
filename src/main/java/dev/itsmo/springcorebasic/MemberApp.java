@@ -3,12 +3,12 @@ package dev.itsmo.springcorebasic;
 import dev.itsmo.springcorebasic.member.Grade;
 import dev.itsmo.springcorebasic.member.Member;
 import dev.itsmo.springcorebasic.member.MemberService;
-import dev.itsmo.springcorebasic.member.MemberServiceImpl;
 
 public class MemberApp {
 
     public static void main(String[] args) {
-        MemberService memberService = new MemberServiceImpl();
+        AppConfig appConfig = new AppConfig();
+        MemberService memberService = appConfig.memberService();
         Member member = new Member(1L, "memberA", Grade.VIP);
         memberService.join(member);
 
