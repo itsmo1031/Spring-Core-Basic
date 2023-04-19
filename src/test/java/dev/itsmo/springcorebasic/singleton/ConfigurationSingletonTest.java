@@ -30,4 +30,12 @@ public class ConfigurationSingletonTest {
         // 모두 같은 인스턴스를 참조하고 있음
         assertThat(memberRepository).isSameAs(memberRepository1).isSameAs(memberRepository2);
     }
+
+    @Test
+    void configurationDeep() {
+        AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext(AppConfig.class);
+        AppConfig bean = ac.getBean(AppConfig.class);
+
+        System.out.println("bean = " + bean.getClass());
+    }
 }
