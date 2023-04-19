@@ -1,6 +1,5 @@
 package dev.itsmo.springcorebasic.beanfind;
 
-import dev.itsmo.springcorebasic.AppConfig;
 import dev.itsmo.springcorebasic.discount.DiscountPolicy;
 import dev.itsmo.springcorebasic.discount.FixDiscountPolicy;
 import dev.itsmo.springcorebasic.discount.RateDiscountPolicy;

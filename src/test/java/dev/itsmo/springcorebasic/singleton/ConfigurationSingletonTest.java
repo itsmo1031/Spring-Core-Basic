@@ -4,7 +4,6 @@ import dev.itsmo.springcorebasic.AppConfig;
 import dev.itsmo.springcorebasic.member.MemberRepository;
 import dev.itsmo.springcorebasic.member.MemberServiceImpl;
 import dev.itsmo.springcorebasic.order.OrderServiceImpl;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
