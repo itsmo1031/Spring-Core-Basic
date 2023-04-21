@@ -3,20 +3,15 @@ package dev.itsmo.springcorebasic.order;
 import dev.itsmo.springcorebasic.discount.DiscountPolicy;
 import dev.itsmo.springcorebasic.member.Member;
 import dev.itsmo.springcorebasic.member.MemberRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor // final 생성자 자동 생성 Lombok
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;
     private final DiscountPolicy discountPolicy;
-
-    @Autowired
-    public OrderServiceImpl(MemberRepository memberRepository, DiscountPolicy discountPolicy) {
-        this.memberRepository = memberRepository;
-        this.discountPolicy = discountPolicy;
-    }
 
     @Override
     public Order createOrder(Long memberId, String itemName, int itemPrice) {

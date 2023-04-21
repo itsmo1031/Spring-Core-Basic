@@ -1,18 +1,14 @@
 package dev.itsmo.springcorebasic.member;
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
 
 @Component
+@RequiredArgsConstructor // final 생성자 자동 생성 Lombok
 public class MemberServiceImpl implements MemberService {
 
     private final MemberRepository memberRepository;
-
-    @Autowired // == ac.getBean(MemberRepository.class)
-    public MemberServiceImpl(MemberRepository memberRepository) {
-        this.memberRepository = memberRepository;
-    }
 
     @Override
     public void join(Member member) {
